@@ -22,6 +22,13 @@ public class ControllerTest {
 
         cont.mandarElemento(param);
 
+        if(data.buscarPeople(people,"peoples.json") == 1)
+        {
+            assertTrue(true);
+        }else
+        {
+            fail("No se ha añadido");
+        }
 
     }
 }
