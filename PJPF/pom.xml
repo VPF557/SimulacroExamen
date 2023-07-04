@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>ufv.dis.final2023.example</groupId>
 	<artifactId>PJPF</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>PJPF</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
