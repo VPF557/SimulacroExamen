@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Film
 {
-    ArrayList<String> films;
+    private ArrayList<String> films;
 
     public Film() {
     }

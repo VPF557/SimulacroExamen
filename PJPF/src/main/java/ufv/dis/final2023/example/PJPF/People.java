@@ -10,16 +10,16 @@ public class People
     private String mass;
     private String gender;
 
-    private ArrayList<Film> film;
+    private ArrayList<String> films;
 
     public People() {
     }
 
-    public People(String name, String mass, String gender, ArrayList<Film> film) {
+    public People(String name, String mass, String gender, ArrayList<String> films) {
         this.name = name;
         this.mass = mass;
         this.gender = gender;
-        this.film = film;
+        this.films = films;
     }
 
     public String getName() {
@@ -46,12 +46,12 @@ public class People
         this.gender = gender;
     }
 
-    public ArrayList<Film> getFilm() {
-        return film;
+    public ArrayList<String> getFilms() {
+        return films;
     }
 
-    public void setFilm(ArrayList<Film> film) {
-        this.film = film;
+    public void setFilm(ArrayList<String> films) {
+        this.films = films;
     }
 
     public String MostrarJson()
