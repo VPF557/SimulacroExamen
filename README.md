@@ -1,6 +1,6 @@
 # SimulacroExamen
 
-# Version : 1.0 todo terminado
+# Version : 2.0  Fronttodo terminado
 
 # Referencias:
 https://github.com/VPF557/PlantillaDIS
