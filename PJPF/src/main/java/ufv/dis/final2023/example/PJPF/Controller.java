@@ -33,7 +33,7 @@ public class Controller {
     public void mandarElemento(@RequestBody Params objeto1)
     {
         //Hecho
-        ArrayList<People> listaPlanets = reader.LeerFicheroPeople("people.json");
+        ArrayList<People> listaPlanets = reader.LeerFicheroPeople("peoples.json");
         ArrayList<Params> listaPeticiones = reader.LeerFicheroPeticiones("petitions.json");
         ArrayList<Starship> listaStarships = reader.LeerFicheroStarships("starships.json");
 
@@ -47,10 +47,10 @@ public class Controller {
         }
         else
         {
-            Planet planeta = new Planet();
-            planeta = data.obtenerPlanets(objeto1);
-            listaPlanets.add(planeta);
-            writter.escribirJsonPlanet(listaPlanets);
+            People people = new People();
+            people = data.obtenerPeople(objeto1);
+            listaPlanets.add(people);
+            writter.escribirJsonPeople(listaPlanets);
 
         }
 
