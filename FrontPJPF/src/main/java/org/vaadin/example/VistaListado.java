@@ -9,7 +9,7 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 
 public class VistaListado extends VerticalLayout {
-    ArrayList<Param> listaParametro = new ArrayList<>();
+    ArrayList<Params> listaParametro = new ArrayList<>();
     public VistaListado()
     {
 
