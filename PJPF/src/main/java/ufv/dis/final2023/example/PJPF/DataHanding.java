@@ -99,4 +99,38 @@ public class DataHanding {
         return listaAux;
     }
 
+    public int  buscarPeople(People people, String ruta) {
+        //En esta funcion se añaden los nuevos elementos enviados desde el front a un ArrayList para posteriormente actualizar la BBDD
+        LeerJson reader = new LeerJson();
+        int control = 0;
+        ArrayList<People> listaAux = reader.LeerFicheroPeople(ruta);
+        for (int i = 0; i < listaAux.size(); i++)
+        {
+            if (listaAux.get(i).getName().equals(people.getName()) &&
+                    listaAux.get(i).getMass().equals(people.getMass() )
+                    && listaAux.get(i).getGender().equals(people.getGender()))
+            {
+               control = 4;
+            }
+        }
+        return control;
+    }
+
+    public int  contarElementos(People people, String ruta) {
+        //En esta funcion se añaden los nuevos elementos enviados desde el front a un ArrayList para posteriormente actualizar la BBDD
+        LeerJson reader = new LeerJson();
+        int control = 0;
+        ArrayList<People> listaAux = reader.LeerFicheroPeople(ruta);
+        for (int i = 0; i < listaAux.size(); i++)
+        {
+            if (listaAux.get(i).getName().equals(people.getName()) &&
+                    listaAux.get(i).getMass().equals(people.getMass() )
+                    && listaAux.get(i).getGender().equals(people.getGender()))
+            {
+                control = 4;
+            }
+        }
+        return control;
+    }
+
 }
