@@ -58,14 +58,14 @@ public class Controller {
         writter.escribirJsonPeticiones(listaPeticiones);
     }
 
-  /*  @DeleteMapping("/Borrar{parameter1}{parameter2}")
-    public ArrayList<Param> borrarParam(@RequestParam String parameter1,@RequestParam int parameter2 )
+    @DeleteMapping("/Borrar{entity}{id}")
+    public ArrayList<Params> borrarParam(@RequestParam String entity,@RequestParam int id )
     {
-        ArrayList<Param>  lista = data.buscarObjeto(parameter1,parameter2,"Petitions.json");
+        ArrayList<Params>  lista = data.buscarObjeto(entity,id,"petitions.json");
         EscribirJson escribirJSON = new EscribirJson();
         writter.escribirJsonPeticiones(lista);
 
         return lista;
 
-    }*/
+    }
 }
