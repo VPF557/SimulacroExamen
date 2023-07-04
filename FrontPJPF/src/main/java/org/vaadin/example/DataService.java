@@ -49,7 +49,7 @@ public class DataService {
         Gson g = new Gson();
         String urlPrefix = "http://localhost:8081/peticion";
         CloseableHttpClient httpClient = HttpClients.createDefault();
-        String datospasar = productoNuevo.toString();
+        String datospasar = productoNuevo.MostrarJson();
         StringEntity entidad = null;
         try {
             entidad = new StringEntity(datospasar);
